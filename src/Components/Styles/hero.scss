@@ -1,0 +1,154 @@
+.hero {
+    display: grid;
+    place-content: center;
+    min-height: calc(100vh - 4rem);
+    min-height: calc(100svh - 4rem);
+    margin-bottom: 2rem;
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        .left-col {
+            width: 100%;
+
+            h1 {
+                font-size: 2.6rem;
+                margin-bottom: 0.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                color: var(--primary-color);
+            }
+
+            p {
+                margin: 1.5rem 0;
+                font-weight: 500;
+                line-height: 1.5rem;
+            }
+
+            .btns {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                button {
+                    font-size: 1.2rem;
+                    border-radius: 0 0.5rem;
+                    border: 0.1rem solid var(--primary-color);
+                    padding: 0.6rem 1.1rem;
+                    color: var(--primary-color);
+                    cursor: pointer;
+                    transition: 0.5s;
+                    font-weight: 600;
+
+                    &:hover {
+                        background: var(--primary-color);
+                        color: var(--bg-color);
+                    }
+
+                    &:first-child {
+                        color: var(--bg-color);
+                        background: var(--primary-color);
+
+                        &:hover {
+                            background: var(--bg-color);
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-col {
+            width: 100%;
+            background-color: var(--dark-bg-color);
+            border-radius: 0 2rem;
+
+            .container {
+                border-radius: 40% 0;
+                width: 80%;
+                overflow: hidden;
+                aspect-ratio: 1/1;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// MEDIAS
+@media screen and (max-width: 850px) {
+    .hero {
+        .container {
+            width: 90%;
+
+            .left-col {
+                h1 {
+                    font-size: 2.3rem;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 0.94rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .hero {
+        margin-top: 5.5rem;
+
+        .container {
+            padding: 0 0.2rem;
+            display: block;
+
+            .left-col {
+                text-align: center;
+
+                h1 {
+                    margin-bottom: 1rem;
+                    font-size: 1.94rem;
+                }
+
+                h2 {
+                    font-size: 1.3rem;
+                }
+
+                .btns {
+                    justify-content: center;
+                    margin-bottom: 1.7rem;
+                }
+            }
+
+            .right-col {
+                background: none;
+                margin: 0 auto;
+                margin-bottom: 3rem;
+                max-width: 16rem;
+
+                .container {
+                    border: 4px double var(--primary-color);
+                    width: 100%;
+                    border-radius: 50%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
