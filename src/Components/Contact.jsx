@@ -6,7 +6,6 @@ import { FaMale } from "react-icons/fa";
 
 import "./Styles/contact.scss";
 import Me from "../assets/contact.png";
-import { Link } from "react-router-dom";
 
 function Contact() {
     return (

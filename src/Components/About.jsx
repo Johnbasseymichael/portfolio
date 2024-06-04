@@ -13,7 +13,7 @@ function About() {
             detail: `Over the years, I've honed my skills in various aspects of frontend development, from designing intuitive interfaces to optimizing performance and ensuring cross-browser compatibility. I believe in the power of clean, efficient code and innovative design to solve complex problems and bring ideas to life.`,
         },
         {
-            heading: "Why You Should Hire Me",
+            heading: "Why Hire Me",
             detail: `My dedication to continuous learning and staying updated with the latest trends in technology ensures that I bring the best practices to every project. I am committed to delivering high-quality work that meets your specific needs and exceeds your expectations. Whether it's a small website update or a large-scale project, I approach each task with the same level of enthusiasm and attention to detail.`,
         },
         {

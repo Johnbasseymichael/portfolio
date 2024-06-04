@@ -212,11 +212,12 @@
                 align-items: center;
                 gap: 1.5rem;
                 margin-left: auto;
+                margin-right: 1.3rem;
 
                 .picture {
                     display: grid;
                     place-content: center;
-                    width: 100%;
+                    width: 35%;
 
                     img {
                         height: 100%;
@@ -226,7 +227,7 @@
                 }
 
                 .mail-me {
-                    width: 100%;
+                    width: 65%;
                     h2 {
                         text-align: left;
                         font-size: 1.8rem;
