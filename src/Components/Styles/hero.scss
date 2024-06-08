@@ -23,11 +23,21 @@
                 font-size: 2.6rem;
                 margin-bottom: 0.2rem;
             }
+            .type-writer {
+                width: fit-content;
+                display: flex;
+                align-items: center;
 
-            h2 {
-                font-size: 1.8rem;
-                text-transform: uppercase;
-                color: var(--primary-color);
+                h2 {
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    color: var(--primary-color);
+                }
+
+                span {
+                    font-size: 2rem;
+                    display: block;
+                }
             }
 
             p {
@@ -41,7 +51,8 @@
                 align-items: center;
                 gap: 2rem;
 
-                button {
+                button,
+                a {
                     font-size: 1.2rem;
                     border-radius: 0 0.5rem;
                     border: 0.1rem solid var(--primary-color);
@@ -55,15 +66,14 @@
                         background: var(--primary-color);
                         color: var(--bg-color);
                     }
+                }
+                a {
+                    color: var(--bg-color);
+                    background: var(--primary-color);
 
-                    &:first-child {
-                        color: var(--bg-color);
-                        background: var(--primary-color);
-
-                        &:hover {
-                            background: var(--bg-color);
-                            color: var(--primary-color);
-                        }
+                    &:hover {
+                        background: var(--bg-color);
+                        color: var(--primary-color);
                     }
                 }
             }
@@ -126,6 +136,10 @@
 
             .left-col {
                 text-align: center;
+
+                .type-writer {
+                    margin: 0 auto;
+                }
 
                 h1 {
                     margin-bottom: 1rem;

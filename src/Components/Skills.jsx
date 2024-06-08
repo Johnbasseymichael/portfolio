@@ -19,6 +19,11 @@ import tailwind from "../assets/tailwind.jpeg";
 import threejs from "../assets/threejs.png";
 import ts from "../assets/ts.png";
 import zustand from "../assets/zustand.jpeg";
+import firebase from "../assets/firebase.png";
+import jekyll from "../assets/jekyll.png";
+import md from "../assets/md.png";
+import rq from "../assets/rq.jpeg";
+import swiper from "../assets/swiper.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,11 +50,11 @@ function Skills() {
             skillName: "React Js",
         },
         {
-            skillImg: Me,
+            skillImg: jekyll,
             skillName: "Jekyll ",
         },
         {
-            skillImg: Me,
+            skillImg: md,
             skillName: "Markdown",
         },
         {
@@ -66,7 +71,7 @@ function Skills() {
         },
 
         {
-            skillImg: Me,
+            skillImg: firebase,
             skillName: "Firebase ",
         },
         {
@@ -100,32 +105,57 @@ function Skills() {
             skillName: "Netlify ",
         },
         {
-            skillImg: Me,
+            skillImg: rq,
             skillName: " React Query",
         },
         {
-            skillImg: Me,
-            skillName: " ",
+            skillImg: swiper,
+            skillName: "Swiper Js",
         },
     ];
 
     const refs = useRef(skills.map(() => React.createRef()));
+    const desktopRefs = useRef(skills.map(() => React.createRef()));
+
+    // FOR MOBILE VIEW
     useEffect(() => {
         refs.current.forEach((ref, index) => {
             gsap.fromTo(
                 ref.current,
-                { x: 200, y: 40, opacity: 0 },
+                { x: 200, y: -40, opacity: 0 },
                 {
                     x: 0,
                     y: 0,
                     opacity: 1,
-                    duration: 1,
-                    // ease: "power1.out",
+                    // duration: 1,
+                    ease: "power1.out",
+                    scrollTrigger: {
+                        trigger: ref.current,
+                        start: "top 110%",
+                        end: "bottom center",
+                        scrub: true,
+                        toggleActions: "play none none none",
+                    },
+                }
+            );
+        });
+    }, []);
+
+    // FOR DESKTOP VIEW
+    useEffect(() => {
+        desktopRefs.current.forEach((ref, index) => {
+            gsap.fromTo(
+                ref.current,
+                { x: 200, y: -40, opacity: 0 },
+                {
+                    x: 0,
+                    y: 0,
+                    opacity: 1,
                     ease: "back.out",
                     scrollTrigger: {
                         trigger: ref.current,
-                        start: "top 100%",
-                        end: "bottom 50%",
+                        start: "top center",
+                        end: "bottom center",
                         scrub: true,
                         toggleActions: "play none none none",
                     },
@@ -147,7 +177,20 @@ function Skills() {
 
                 <h3>Technological Proficiencies</h3>
 
-                <div className="techs">
+                <div className="techs desktop">
+                    {skills.map((skill, i) => (
+                        <div
+                            key={i}
+                            className="tech"
+                            ref={desktopRefs.current[i]}
+                        >
+                            <img src={skill.skillImg} />
+                            <p>{skill.skillName}</p>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="techs mobile">
                     {skills.map((skill, i) => (
                         <div key={i} className="tech" ref={refs.current[i]}>
                             <img src={skill.skillImg} />

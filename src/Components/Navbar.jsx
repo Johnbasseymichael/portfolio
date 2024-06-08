@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CgMenuHotdog } from "react-icons/cg";
 import { IoMdCloseCircle } from "react-icons/io";
 import "./Styles/navbar.scss";
+import { Link } from "react-scroll";
 
 function Navbar() {
     const [viewMenu, setViewMenu] = useState(false);
@@ -10,13 +11,25 @@ function Navbar() {
         <div className={`navbar ${viewMenu ? "view-menu" : ""}`}>
             <nav onClick={() => (viewMenu ? setViewMenu(false) : null)}>
                 <div className="left">
-                    <a href="#hero" className="desktop-name">
+                    <Link
+                        className="desktop-name"
+                        to="hero"
+                        offset={-80}
+                        smooth={true}
+                        duration={500}
+                    >
                         John<span>Bassey.</span>
-                    </a>
+                    </Link>
 
-                    <a href="#hero" className="mobile-name">
+                    <Link
+                        className="mobile-name"
+                        to="hero"
+                        offset={-80}
+                        smooth={true}
+                        duration={500}
+                    >
                         J<span>B.</span>
-                    </a>
+                    </Link>
 
                     <div className="svg">
                         <CgMenuHotdog onClick={() => setViewMenu(true)} />
@@ -26,22 +39,70 @@ function Navbar() {
 
                 <ul>
                     <li>
-                        <a href="#hero">home</a>
+                        <Link
+                            onClick={() => setViewMenu(false)}
+                            to="hero"
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                        >
+                            home
+                        </Link>
                     </li>
                     <li>
-                        <a href="#about">about</a>
+                        <Link
+                            to="about"
+                            onClick={() => setViewMenu(false)}
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                        >
+                            about
+                        </Link>
                     </li>
                     <li>
-                        <a href="#skills">skills</a>
+                        <Link
+                            to="skills"
+                            onClick={() => setViewMenu(false)}
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                        >
+                            skills
+                        </Link>
                     </li>
                     <li>
-                        <a href="#portfolio">portfoil</a>
+                        <Link
+                            to="portfolio"
+                            onClick={() => setViewMenu(false)}
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                        >
+                            portfolio
+                        </Link>
                     </li>
                     <li>
-                        <a href="#testimonials">testimonials</a>
+                        <Link
+                            to="testimonials"
+                            onClick={() => setViewMenu(false)}
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                        >
+                            testimonials
+                        </Link>
                     </li>
                     <li>
-                        <a href="#contact">contact</a>
+                        <Link
+                            to="contact"
+                            onClick={() => setViewMenu(false)}
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                        >
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </nav>

@@ -1,12 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 import "./Styles/hero.scss";
 import Me from "../assets/me.jpg";
+import { Link } from "react-scroll";
+import Text from "./Text";
 
 function Hero() {
     const div1 = useRef(null);
     const div2 = useRef(null);
+
+    let texts = ["software engineer", "FRONTEND DEVELOPER", "web dev"];
 
     useEffect(() => {
         const timeline = gsap.timeline();
@@ -38,7 +42,7 @@ function Hero() {
                     y: 0,
                     duration: 0.5,
                 },
-                "+=0.5"
+                "+=0.2"
             );
     }, []);
 
@@ -47,7 +51,7 @@ function Hero() {
             <div className="container">
                 <div className="left-col" ref={div1}>
                     <h1>Hi, I'm John Bassey Michael</h1>
-                    <h2>Frontend Developer</h2>
+                    <Text />
                     <p>
                         Specializing in creating sleek, responsive, and
                         user-friendly web applications. Dedicated to delivering
@@ -57,8 +61,15 @@ function Hero() {
                     </p>
 
                     <div className="btns">
-                        <button>Hire me</button>
-                        <button>let's talk</button>
+                        <button>My CV</button>
+                        <Link
+                            to="contact"
+                            offset={-80}
+                            smooth={true}
+                            duration={500}
+                        >
+                            let's talk
+                        </Link>
                     </div>
                 </div>
 

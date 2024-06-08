@@ -2,6 +2,8 @@ import React from "react";
 import "./Styles/testimonials.scss";
 import { FaQuoteRight } from "react-icons/fa";
 import Me from "../assets/me.jpg";
+import elisha from "../assets/elisha.jpeg";
+import j from "../assets/j.jpeg";
 
 function Testimonials() {
     return (
@@ -18,40 +20,40 @@ function Testimonials() {
                     <div className="card">
                         <FaQuoteRight />
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Alias, eaque ullam rerum tempora deserunt
-                            dolorem repellat quos voluptatum ex mollitia.
+                            John's meticulous attention to detail and dedication
+                            to user experience greatly enhanced our website's
+                            design and functionality.
                         </p>
                         <div className="person">
-                            <img src={Me} alt="person" />
+                            <img src={elisha} alt="person" />
                         </div>
-                        <small>John Doe</small>
+                        <small>Adamu Elisha</small>
                     </div>
 
                     <div className="card">
                         <FaQuoteRight />
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Alias, eaque ullam rerum tempora deserunt
-                            dolorem repellat quos voluptatum ex mollitia.
+                            John transformed our vision into a stunning,
+                            responsive website with impressive animations,
+                            showcasing his exceptional frontend skills.
                         </p>
                         <div className="person">
-                            <img src={Me} alt="person" />
+                            <img src={j} alt="person" />
                         </div>
-                        <small>John Doe</small>
+                        <small>Jonathan Felicity</small>
                     </div>
 
                     <div className="card">
                         <FaQuoteRight />
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Alias, eaque ullam rerum tempora deserunt
-                            dolorem repellat quos voluptatum ex mollitia.
+                            John’s creative approach and technical expertise
+                            ensured our project’s success, delivering
+                            outstanding results beyond our expectations.
                         </p>
                         <div className="person">
                             <img src={Me} alt="person" />
                         </div>
-                        <small>John Doe</small>
+                        <small>Austin Jay</small>
                     </div>
                 </div>
             </div>

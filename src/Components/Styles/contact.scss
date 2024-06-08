@@ -110,6 +110,11 @@
                 }
 
                 form {
+                    .err {
+                        color: red;
+                        margin-bottom: 0.3rem;
+                    }
+
                     & > div {
                         margin-bottom: 1.5rem;
                         label {
