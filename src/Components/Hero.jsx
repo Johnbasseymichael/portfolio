@@ -1,16 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 import "./Styles/hero.scss";
-import Me from "../assets/me.jpg";
+import Me from "../assets/alvo.jpg";
 import { Link } from "react-scroll";
 import Text from "./Text";
 
 function Hero() {
     const div1 = useRef(null);
     const div2 = useRef(null);
-
-    let texts = ["software engineer", "FRONTEND DEVELOPER", "web dev"];
 
     useEffect(() => {
         const timeline = gsap.timeline();

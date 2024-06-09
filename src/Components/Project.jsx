@@ -24,8 +24,12 @@ function Project({ project, setShowWorkDetails }) {
     };
 
     return (
-        <div className="project-details">
-            <div ref={projectRef} className="container">
+        <div onClick={close} className="project-details">
+            <div
+                onClick={(e) => e.stopPropagation()}
+                ref={projectRef}
+                className="container"
+            >
                 <IoMdCloseCircle onClick={close} />
 
                 <h3>{project.name}</h3>

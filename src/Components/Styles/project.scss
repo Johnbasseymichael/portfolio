@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     height: 100vh;
+    height: 100svh;
     width: 100vw;
     z-index: 999;
     display: flex;
@@ -61,7 +62,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 0.8rem;
-            margin: 0.8rem 0;
+            margin: 1.3rem 0;
 
             p {
                 background: var(--bg-color);
@@ -75,6 +76,7 @@
 
         h4 {
             margin-bottom: 0.5rem;
+            margin-top: 1.6rem;
             font-size: 1.2rem;
         }
 
@@ -89,7 +91,7 @@
             display: block;
             font-size: 2.2rem;
             color: var(--primary-color);
-            margin: 0.8rem 0;
+            margin: 1.3rem 0;
             width: fit-content;
         }
 
@@ -103,6 +105,16 @@
             color: var(--dark-bg-color);
             border-radius: 0.4rem;
             margin: 0.5rem auto 1rem auto;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .project-details {
+        .container {
+            .img {
+                height: 11rem;
+            }
         }
     }
 }

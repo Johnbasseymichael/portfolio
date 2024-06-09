@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Styles/msg.scss";
 import { GiCheckMark } from "react-icons/gi";
 import gsap from "gsap";
-import { IoMdCloseCircle } from "react-icons/io";
+import { TfiFaceSad } from "react-icons/tfi";
 
 function Msg({ msg, failed }) {
     const msgRef = useRef(null);
@@ -23,7 +23,7 @@ function Msg({ msg, failed }) {
 
     return (
         <div className={`submit-success ${failed ? "err" : ""}`} ref={msgRef}>
-            {failed ? <IoMdCloseCircle /> : <GiCheckMark />}
+            {failed ? <TfiFaceSad /> : <GiCheckMark />}
             <p>{msg}</p>
         </div>
     );

@@ -23,11 +23,11 @@
             justify-content: center;
             gap: 1.3rem;
             margin-top: 3.5rem;
-            max-width: 53rem;
+            max-width: 63rem;
 
             .card {
                 background: var(--dark-bg-color);
-                padding: 1rem 0.5rem;
+                padding: 1rem;
                 border-radius: 0 0.8rem;
                 transition: 0.5s;
                 user-select: none;
@@ -83,7 +83,7 @@
 
 // MEDIAS
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 860px) {
     .testimonials {
         .container {
             .cards {
