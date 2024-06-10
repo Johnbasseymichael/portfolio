@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import alvocine from "../assets/alvocine.png";
 import alvochat from "../assets/alvochat.png";
-import pic from "../assets/zustand.jpeg";
+import port from "../assets/portfolio.png";
 import "./Styles/portfolio.scss";
 import Project from "./Project";
 
@@ -19,87 +19,82 @@ function Portfolio() {
             workImg: alvocine,
             name: "alvocine",
             index: "01",
-            tags: ["html", "css", "sass", "javaScript", "react"],
+            tags: [
+                "html",
+                "css",
+                "sass",
+                "javaScript",
+                "react",
+                "IMDB",
+                "react query",
+                "react player",
+            ],
             link: "https://alvocine.netlify.app/",
             github: "https://github.com/Johnbasseymichael/alvo-cine",
-            features: ["get movies", "search movies", "get movies details"],
-            description: `Lorem ipsum, dolor sit amet consectetur
-    adipisicing elit. Reiciendis nam temporibus
-    consequatur inventore autem sunt aspernatur odit
-    accusantium tempora rerum possimus obcaecati
-    odio beatae velit, tenetur aliquam pariatur
-    quidem atque minima. Ea sit quibusdam odit enim
-    ab voluptates, officiis, atque saepe facilis
-    quos mollitia facere earum optio esse rerum
-    culpa.`,
+            features: [
+                "get movies list",
+                "watch movie trailer",
+                "search movies",
+                "get movie details",
+                "get upcoming movies",
+                "",
+            ],
+            description: `Alvocine: A dynamic movie recommendation application built with React. Alvocine provides users with personalized movie suggestions based on their preferences and viewing history. The application features a sleek and user-friendly interface, seamless navigation, and real-time updates to enhance the user experience. Integrated with external APIs, Alvocine offers a rich database of movies, including detailed information and reviews. This project demonstrates strong skills in React development, API integration, and UI/UX design.`,
         },
         {
             workImg: alvochat,
             name: "alvochat",
             index: "02",
-            tags: ["html", "scc", "javaScript"],
+            tags: [
+                "html",
+                "css",
+                "sass",
+                "javaScript",
+                "react",
+                "firebase",
+                "redux",
+            ],
             link: "https://alvochat.netlify.app/",
             github: "https://github.com/Johnbasseymichael/alvo-chat",
             features: [
                 "send messages",
+                "recive messages",
                 "send pictures",
-                "send videos",
+                "recive pictures",
                 "serch for friends",
                 "authentication",
+                "and more...",
             ],
-            description: `Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Reiciendis nam temporibus
-        consequatur inventore autem sunt aspernatur odit
-        accusantium tempora rerum possimus obcaecati
-        odio beatae velit, tenetur aliquam pariatur
-        quidem atque minima. Ea sit quibusdam odit enim
-        ab voluptates, officiis, atque saepe facilis
-        quos mollitia facere earum optio esse rerum
-        culpa.`,
+            description: `AlvoChat is a dynamic and user-friendly chatting application built using React. Designed to provide seamless communication, the application features real-time messaging, a responsive interface, and intuitive user interactions. Hosted on Netlify, AlvoChat demonstrates proficiency in modern web development technologies and practices.`,
         },
+
         {
-            workImg: pic,
-            name: "alvochat",
-            index: "02",
-            tags: ["html", "scc", "javaScript"],
-            link: "#",
-            github: "#",
-            features: [
-                "sem asd sdfsfsd sadf asdf asd",
-                " asdfasdlfal  adsfasd",
-                "view profile",
-            ],
-            description: `Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Reiciendis nam temporibus
-        consequatur inventore autem sunt aspernatur odit
-        accusantium tempora rerum possimus obcaecati
-        odio beatae velit, tenetur aliquam pariatur
-        quidem atque minima. Ea sit quibusdam odit enim
-        ab voluptates, officiis, atque saepe facilis
-        quos mollitia facere earum optio esse rerum
-        culpa.`,
-        },
-        {
-            workImg: pic,
+            workImg: port,
             name: "portfolio",
             index: "03",
-            tags: ["html", "scc", "javaScript"],
+            tags: [
+                "html",
+                "css",
+                "sass",
+                "Gsap",
+                "yup",
+                "react-hook-form",
+                "javaScript",
+                "and more...",
+            ],
             link: "#",
             github: "#",
             features: [
-                "sem asd sdfsfsd sadf asdf asd",
-                " asdfasdlfal  adsfasd",
-                "view profile",
+                "Visual Design",
+                " Certifications",
+                "Responsive Design",
+                "resume/CV",
+                "Skills",
+                "and more...",
             ],
-            description: `Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Reiciendis nam temporibus
-        consequatur inventore autem sunt aspernatur odit
-        accusantium tempora rerum possimus obcaecati
-        odio beatae velit, tenetur aliquam pariatur
-        quidem atque minima. Ea sit quibusdam odit enim
-        ab voluptates, officiis, atque saepe facilis
-        quos mollitia facere earum optio esse rerum
-        culpa.`,
+            description: `Personal Portfolio: An interactive portfolio showcasing my skills as a frontend web developer. Built with React and enhanced with GSAP animations, it features projects like AlvoChat and Alvocine, demonstrating my expertise in creating dynamic and responsive web applications.
+
+`,
         },
     ];
 

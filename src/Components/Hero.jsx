@@ -59,7 +59,13 @@ function Hero() {
                     </p>
 
                     <div className="btns">
-                        <button>My CV</button>
+                        <button
+                            onClick={() =>
+                                alert("my CV will be in available 2days time")
+                            }
+                        >
+                            My CV
+                        </button>
                         <Link
                             to="contact"
                             offset={-80}

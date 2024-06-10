@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../assets/me.jpg";
+// import Me from "../assets/me.jpg";
 import "./Styles/about.scss";
 
 function About() {
@@ -29,7 +29,12 @@ function About() {
 
                 <div className="my-info">
                     <div className="my-img">
-                        <img src={Me} alt="me" />
+                        <img
+                            src={
+                                "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?t=st=1718024953~exp=1718028553~hmac=0bd93a854c2277aa7c72008733a452d6fa829c4db8ca15f88464da93dc4c6e05&w=740"
+                            }
+                            alt="me"
+                        />
                     </div>
 
                     <div className="details">
