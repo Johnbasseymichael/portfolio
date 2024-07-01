@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import alvocine from "../assets/alvocine.png";
+import alvobond from "../assets/alvobond.jpg";
 import alvochat from "../assets/alvochat.png";
 import port from "../assets/portfolio.png";
 import "./Styles/portfolio.scss";
@@ -42,9 +43,27 @@ function Portfolio() {
             description: `Alvocine: A dynamic movie recommendation application built with React. Alvocine provides users with personalized movie suggestions based on their preferences and viewing history. The application features a sleek and user-friendly interface, seamless navigation, and real-time updates to enhance the user experience. Integrated with external APIs, Alvocine offers a rich database of movies, including detailed information and reviews. This project demonstrates strong skills in React development, API integration, and UI/UX design.`,
         },
         {
+            workImg: alvobond,
+            name: "alvo connect",
+            index: "02",
+            tags: ["html", "css", "sass", "javaScript", "react", "ZEGO"],
+            link: "https://alvoconnect.netlify.app/",
+            github: "https://github.com/Johnbasseymichael/alvo-bond",
+            features: [
+                "Start a video call",
+                "Join a video call",
+                "Group call",
+                "Chat",
+                "Share screen",
+                "Edit layout",
+                "and more...",
+            ],
+            description: `Alvocine: A dynamic movie recommendation application built with React. Alvocine provides users with personalized movie suggestions based on their preferences and viewing history. The application features a sleek and user-friendly interface, seamless navigation, and real-time updates to enhance the user experience. Integrated with external APIs, Alvocine offers a rich database of movies, including detailed information and reviews. This project demonstrates strong skills in React development, API integration, and UI/UX design.`,
+        },
+        {
             workImg: alvochat,
             name: "alvochat",
-            index: "02",
+            index: "03",
             tags: [
                 "html",
                 "css",
@@ -71,7 +90,7 @@ function Portfolio() {
         {
             workImg: port,
             name: "portfolio",
-            index: "03",
+            index: "04",
             tags: [
                 "html",
                 "css",

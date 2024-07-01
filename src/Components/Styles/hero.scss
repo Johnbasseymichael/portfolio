@@ -29,7 +29,7 @@
                 align-items: center;
 
                 h2 {
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     text-transform: uppercase;
                     color: var(--primary-color);
                     font-family: var(--f2);
@@ -45,6 +45,7 @@
                 margin: 1.5rem 0;
                 font-weight: 500;
                 line-height: 1.5rem;
+                margin-top: 0.4rem;
             }
 
             .btns {
@@ -86,13 +87,19 @@
             opacity: 0;
             width: 100%;
             background-color: var(--dark-bg-color);
-            border-radius: 0 2rem;
+            border-radius: 2rem;
+            position: relative;
+            top: 2rem;
+            right: -2rem;
 
             .container {
-                border-radius: 40% 0;
-                width: 80%;
+                border-radius: 2rem;
+                width: 100%;
                 overflow: hidden;
-                aspect-ratio: 1/1;
+                aspect-ratio: 1.3/1;
+                position: relative;
+                top: -2rem;
+                right: 2rem;
 
                 img {
                     height: 100%;
@@ -127,7 +134,7 @@
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
     .hero {
         margin-top: 5.5rem;
 
@@ -162,12 +169,15 @@
                 margin: 0 auto;
                 margin-bottom: 3rem;
                 max-width: 16rem;
+                position: static;
 
                 .container {
+                    aspect-ratio: 1/1;
                     border: 4px double var(--primary-color);
                     width: 100%;
                     border-radius: 50%;
                     padding: 0;
+                    position: static;
                 }
             }
         }
