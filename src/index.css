@@ -32,7 +32,6 @@ body {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     background: var(--bg-color);
     color: var(--text-color);
-    padding-top: 4rem;
 }
 
 h1,

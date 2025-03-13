@@ -2,13 +2,16 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 import "./Styles/hero.scss";
-import Me from "../assets/alvo.jpg";
+import Me from "../assets/myImage.jpeg";
 import { Link } from "react-scroll";
 import Text from "./Text";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
     const div1 = useRef(null);
     const div2 = useRef(null);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const timeline = gsap.timeline();
@@ -59,13 +62,7 @@ function Hero() {
                     </p>
 
                     <div className="btns">
-                        <button
-                            onClick={() =>
-                                alert("my CV will be in available 2days time")
-                            }
-                        >
-                            My CV
-                        </button>
+                        <button onClick={() => navigate("/cv")}>My CV</button>
                         <Link
                             to="contact"
                             offset={-80}
