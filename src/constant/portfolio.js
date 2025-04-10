@@ -8,7 +8,6 @@ export const WORKS = [
     {
         workImg: alvocine,
         name: "alvocine",
-        index: "01",
         tags: [
             "html",
             "css",
@@ -27,14 +26,12 @@ export const WORKS = [
             "search movies",
             "get movie details",
             "get upcoming movies",
-            "",
         ],
         description: `Alvocine: A dynamic movie recommendation application built with React. Alvocine provides users with personalized movie suggestions based on their preferences and viewing history. The application features a sleek and user-friendly interface, seamless navigation, and real-time updates to enhance the user experience. Integrated with external APIs, Alvocine offers a rich database of movies, including detailed information and reviews. This project demonstrates strong skills in React development, API integration, and UI/UX design.`,
     },
     {
         workImg: aio,
         name: "AIO Boosting",
-        index: "02",
         tags: ["typeScript", "next.js", "tailwind", "GSAP", "javaScript"],
         link: "https://aio-demo.netlify.app/",
         github: "https://github.com/Johnbasseymichael/aio",
@@ -50,7 +47,6 @@ export const WORKS = [
     {
         workImg: alvobond,
         name: "alvo connect",
-        index: "02",
         tags: ["html", "css", "sass", "javaScript", "react", "ZEGO"],
         link: "https://alvoconnect.netlify.app/",
         github: "https://github.com/Johnbasseymichael/alvo-bond",
@@ -63,12 +59,11 @@ export const WORKS = [
             "Edit layout",
             "and more...",
         ],
-        description: `Alvocine: A dynamic movie recommendation application built with React. Alvocine provides users with personalized movie suggestions based on their preferences and viewing history. The application features a sleek and user-friendly interface, seamless navigation, and real-time updates to enhance the user experience. Integrated with external APIs, Alvocine offers a rich database of movies, including detailed information and reviews. This project demonstrates strong skills in React development, API integration, and UI/UX design.`,
+        description: `A modern video calling platform built using Zego UIKit, designed to enable smooth and reliable peer-to-peer video communication. The application features a clean, responsive user interface, offering users a seamless and intuitive calling experience. With real-time video and audio streaming, the platform ensures high-quality connections, making it suitable for personal, professional, or educational use. The integration of Zego’s robust SDK ensures stability, low latency, and ease of scalability.`,
     },
     {
         workImg: alvochat,
         name: "alvochat",
-        index: "03",
         tags: [
             "html",
             "css",
@@ -95,7 +90,6 @@ export const WORKS = [
     {
         workImg: port,
         name: "portfolio",
-        index: "04",
         tags: [
             "html",
             "css",

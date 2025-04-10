@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub, FaSquareXTwitter, FaPhone } from "react-icons/fa6";
+import { FaGithub, FaPhone } from "react-icons/fa6";
 import { FaMale } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import { MdWhatsapp } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -89,7 +90,7 @@ function Contact() {
                         </a>
 
                         <a
-                            href="https://www.linkedin.com/in/alvin-alvin-1a6984294/"
+                            href="https://www.linkedin.com/in/john-bassey-1a6984294/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -98,12 +99,12 @@ function Contact() {
                         </a>
 
                         <a
-                            href="https://x.com/AlvinAlvin11023"
+                            href="https://wa.me/+2348166842569"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FaSquareXTwitter />
-                            <span>X</span>
+                            <MdWhatsapp />
+                            <span>WhatsApp</span>
                         </a>
                     </div>
 
