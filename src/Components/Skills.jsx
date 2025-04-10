@@ -54,10 +54,6 @@ function Skills() {
             skillName: "Jekyll ",
         },
         {
-            skillImg: md,
-            skillName: "Markdown",
-        },
-        {
             skillImg: redux,
             skillName: "Redux",
         },
